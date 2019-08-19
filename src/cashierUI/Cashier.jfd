@@ -1,0 +1,92 @@
+JFDML JFormDesigner: "7.0.0.0.194" Java: "1.8.0_144" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class info.clearthought.layout.TableLayout ) {
+			"$columnSpecs": "fill"
+			"$rowSpecs": "fill"
+		} ) {
+			name: "frame1"
+			"resizable": false
+			"foreground": new java.awt.Color( 0, 20, 230, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) ) {
+				name: "panel2"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+					"vgap": 7
+				} ) {
+					name: "panel7"
+					"background": new java.awt.Color( 63, 12, 222, 255 )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+						name: "title1"
+						"textWithMnemonic": "登录"
+						"foreground": sfield java.awt.Color white
+						"font": new java.awt.Font( "仿宋", 1, 20 )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+					"vgap": 10
+					"alignOnBaseline": true
+				} ) {
+					name: "panel3"
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsLabel" ) {
+						name: "label1"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\dhs\\Desktop\\ti.jpg" )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "panel4"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane5"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "textArea2"
+						"text": "请输入用户名（手机号）"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+					"vgap": 10
+				} ) {
+					name: "panel5"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane6"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea3"
+							"rows": 1
+							"tabSize": 1
+							"preferredSize": new java.awt.Dimension( 171, 24 )
+							"text": "验证码"
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "获取验证码"
+						"minimumSize": new java.awt.Dimension( 93, 24 )
+						"maximumSize": new java.awt.Dimension( 93, 24 )
+						"preferredSize": new java.awt.Dimension( 93, 25 )
+						"selected": true
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+					"vgap": 50
+				} ) {
+					name: "panel6"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "登录"
+					"maximumSize": new java.awt.Dimension( 57, 44 )
+					"minimumSize": new java.awt.Dimension( 57, 44 )
+					"preferredSize": new java.awt.Dimension( 57, 30 )
+					"requestFocusEnabled": false
+					"font": new java.awt.Font( "幼圆", 0, 16 )
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.TableConstraints ) )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 365, 40 )
+			"size": new java.awt.Dimension( 280, 450 )
+		} )
+	}
+}

@@ -1,0 +1,70 @@
+2019-08-19 21:16:52  [ AWT-EventQueue-0:0 ] - [ DEBUG ]  String.valueOf(getTextPane1().getText()).substring(1): 0.07
+
+2019-08-19 21:16:52  [ AWT-EventQueue-0:18 ] - [ DEBUG ]  amount: 0.07
+2019-08-19 21:16:52  [ AWT-EventQueue-0:18 ] - [ DEBUG ]   f :7.0
+2019-08-19 21:17:14  [ pool-1-thread-2:21870 ] - [ DEBUG ]  String tmps :
+4444444444444
+2019-08-19 21:17:15  [ pool-1-thread-2:22431 ] - [ DEBUG ]  String p1:<xml><TransType>2</TransType><Amount>7</Amount><Body>1</Body><QRCode>
+4444444444444</QRCode></xml>
+2019-08-19 21:17:18  [ pool-1-thread-2:25387 ] - [ DEBUG ]  String[] strings:["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e7\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e\n4444444444444\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e203\u003c/ReturnCode\u003e\u003cReturnMsg\u003e付款码无效:4444444444444\u003c/ReturnMsg\u003e\u003cReference\u003e08002700E01566220636738309\u003c/Reference\u003e\u003c/xml\u003e"]
+2019-08-19 21:17:18  [ pool-1-thread-2:25388 ] - [ DEBUG ]  String[] re :["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e7\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e\n4444444444444\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e203\u003c/ReturnCode\u003e\u003cReturnMsg\u003e付款码无效:4444444444444\u003c/ReturnMsg\u003e\u003cReference\u003e08002700E01566220636738309\u003c/Reference\u003e\u003c/xml\u003e"]
+2019-08-19 21:17:18  [ pool-1-thread-2:25388 ] - [ DEBUG ]  xml:<xml><ReturnCode>203</ReturnCode><ReturnMsg>付款码无效:4444444444444</ReturnMsg><Reference>08002700E01566220636738309</Reference></xml>
+2019-08-19 21:17:18  [ pool-1-thread-2:25644 ] - [ DEBUG ]  mapOne:{ReturnCode=203, Reference=08002700E01566220636738309, ReturnMsg=付款码无效:4444444444444}
+2019-08-19 21:17:18  [ pool-1-thread-2:25644 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220636738309</Reference></xml>
+2019-08-19 21:17:18  [ pool-1-thread-2:25907 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:17:19  [ pool-1-thread-2:26912 ] - [ DEBUG ]  i:1///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:17:19  [ pool-1-thread-2:26912 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220636738309</Reference></xml>
+2019-08-19 21:17:20  [ pool-1-thread-2:27151 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:17:21  [ pool-1-thread-2:28152 ] - [ DEBUG ]  i:2///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:17:21  [ pool-1-thread-2:28153 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220636738309</Reference></xml>
+2019-08-19 21:17:21  [ pool-1-thread-2:28411 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:17:22  [ pool-1-thread-2:29413 ] - [ DEBUG ]  i:3///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:17:22  [ pool-1-thread-2:29414 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220636738309</Reference></xml>
+2019-08-19 21:17:22  [ pool-1-thread-2:29597 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:17:23  [ pool-1-thread-2:30598 ] - [ DEBUG ]  i:4///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:17:23  [ pool-1-thread-2:30599 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220636738309</Reference></xml>
+2019-08-19 21:17:23  [ pool-1-thread-2:30868 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:17:24  [ pool-1-thread-2:31875 ] - [ DEBUG ]  i:5///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:17:24  [ pool-1-thread-2:31875 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220636738309</Reference></xml>
+2019-08-19 21:17:24  [ pool-1-thread-2:32069 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:17:26  [ pool-1-thread-2:33071 ] - [ DEBUG ]  i:6///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:17:26  [ pool-1-thread-2:33183 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220636738309</Reference></xml>
+2019-08-19 21:17:26  [ pool-1-thread-2:33476 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:17:27  [ pool-1-thread-2:34477 ] - [ DEBUG ]  i:7///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:17:27  [ pool-1-thread-2:34720 ] - [ DEBUG ]  map:{"Amount":"7","Body":"1","QRCode":"\n4444444444444","Reference":"08002700E01566220636738309","ReturnCode":"205","ReturnMsg":"NOTPAY","TransType":"2"}
+2019-08-19 21:17:27  [ pool-1-thread-2:34721 ] - [ DEBUG ]  res:["支付方式：二维码\n交易时间：\n订单号：08002700E01566220636738309","客户未支付（未输入密码等）"]
+2019-08-19 21:17:27  [ pool-1-thread-2:34721 ] - [ DEBUG ]  String[] strings :["支付方式：二维码\n交易时间：\n订单号：08002700E01566220636738309","客户未支付（未输入密码等）"]
+2019-08-19 21:18:31  [ AWT-EventQueue-0:0 ] - [ DEBUG ]  String.valueOf(getTextPane1().getText()).substring(1): 0.07
+
+2019-08-19 21:18:31  [ AWT-EventQueue-0:1 ] - [ DEBUG ]  amount: 0.07
+2019-08-19 21:18:31  [ AWT-EventQueue-0:2 ] - [ DEBUG ]   f :7.0
+2019-08-19 21:18:34  [ pool-1-thread-2:2761 ] - [ DEBUG ]  String tmps :5555555
+2019-08-19 21:18:34  [ pool-1-thread-2:3071 ] - [ DEBUG ]  String p1:<xml><TransType>2</TransType><Amount>7</Amount><Body>1</Body><QRCode>5555555</QRCode></xml>
+2019-08-19 21:18:36  [ pool-1-thread-2:4519 ] - [ DEBUG ]  String[] strings:["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e7\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e5555555\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e203\u003c/ReturnCode\u003e\u003cReturnMsg\u003e付款码无效:5555555\u003c/ReturnMsg\u003e\u003cReference\u003e08002700E01566220715004257\u003c/Reference\u003e\u003c/xml\u003e"]
+2019-08-19 21:18:36  [ pool-1-thread-2:4519 ] - [ DEBUG ]  String[] re :["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e7\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e5555555\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e203\u003c/ReturnCode\u003e\u003cReturnMsg\u003e付款码无效:5555555\u003c/ReturnMsg\u003e\u003cReference\u003e08002700E01566220715004257\u003c/Reference\u003e\u003c/xml\u003e"]
+2019-08-19 21:18:36  [ pool-1-thread-2:4520 ] - [ DEBUG ]  xml:<xml><ReturnCode>203</ReturnCode><ReturnMsg>付款码无效:5555555</ReturnMsg><Reference>08002700E01566220715004257</Reference></xml>
+2019-08-19 21:18:36  [ pool-1-thread-2:4565 ] - [ DEBUG ]  mapOne:{ReturnCode=203, Reference=08002700E01566220715004257, ReturnMsg=付款码无效:5555555}
+2019-08-19 21:18:36  [ pool-1-thread-2:4565 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220715004257</Reference></xml>
+2019-08-19 21:18:36  [ pool-1-thread-2:4783 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:18:37  [ pool-1-thread-2:5785 ] - [ DEBUG ]  i:1///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:18:37  [ pool-1-thread-2:5785 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220715004257</Reference></xml>
+2019-08-19 21:18:37  [ pool-1-thread-2:6015 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:18:38  [ pool-1-thread-2:7017 ] - [ DEBUG ]  i:2///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:18:38  [ pool-1-thread-2:7017 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220715004257</Reference></xml>
+2019-08-19 21:18:39  [ pool-1-thread-2:7220 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:18:40  [ pool-1-thread-2:8221 ] - [ DEBUG ]  i:3///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:18:40  [ pool-1-thread-2:8222 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220715004257</Reference></xml>
+2019-08-19 21:18:40  [ pool-1-thread-2:8451 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:18:41  [ pool-1-thread-2:9453 ] - [ DEBUG ]  i:4///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:18:41  [ pool-1-thread-2:9454 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220715004257</Reference></xml>
+2019-08-19 21:18:41  [ pool-1-thread-2:9966 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:18:42  [ pool-1-thread-2:10968 ] - [ DEBUG ]  i:5///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:18:42  [ pool-1-thread-2:10969 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220715004257</Reference></xml>
+2019-08-19 21:18:43  [ pool-1-thread-2:11250 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:18:44  [ pool-1-thread-2:12255 ] - [ DEBUG ]  i:6///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:18:44  [ pool-1-thread-2:12255 ] - [ DEBUG ]  String p1:<xml><Reference>08002700E01566220715004257</Reference></xml>
+2019-08-19 21:18:46  [ pool-1-thread-2:14382 ] - [ DEBUG ]  String string:<xml><ReturnCode>205</ReturnCode><ReturnMsg>NOTPAY</ReturnMsg></xml>
+2019-08-19 21:18:47  [ pool-1-thread-2:15383 ] - [ DEBUG ]  i:7///{"ReturnCode":"205","ReturnMsg":"NOTPAY"}
+2019-08-19 21:18:47  [ pool-1-thread-2:15385 ] - [ DEBUG ]  map:{"Amount":"7","Body":"1","QRCode":"5555555","Reference":"08002700E01566220715004257","ReturnCode":"205","ReturnMsg":"NOTPAY","TransType":"2"}
+2019-08-19 21:18:47  [ pool-1-thread-2:15385 ] - [ DEBUG ]  res:["支付方式：二维码\n交易时间：\n订单号：08002700E01566220715004257","客户未支付（未输入密码等）"]
+2019-08-19 21:18:47  [ pool-1-thread-2:15385 ] - [ DEBUG ]  String[] strings :["支付方式：二维码\n交易时间：\n订单号：08002700E01566220715004257","客户未支付（未输入密码等）"]
