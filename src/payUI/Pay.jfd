@@ -11,11 +11,11 @@ new FormModel {
 				"alignOnBaseline": true
 			} ) {
 				name: "panel1"
-				"background": new java.awt.Color( 0, 11, 224, 255 )
+				"background": new java.awt.Color( 255, 11, 41, 255 )
 				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
 					name: "title1"
 					"textWithMnemonic": "首页"
-					"font": new java.awt.Font( "仿宋", 1, 20 )
+					"font": new java.awt.Font( "微软雅黑 Light", 1, 20 )
 					"foreground": sfield java.awt.Color white
 					"background": new java.awt.Color( 51, 17, 199, 255 )
 				} )
@@ -32,8 +32,8 @@ new FormModel {
 				name: "panel2"
 				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
 					name: "title2"
-					"textWithMnemonic": "收款金额：                     "
-					"font": new java.awt.Font( "仿宋", 0, 17 )
+					"textWithMnemonic": "收款金额：                                       "
+					"font": new java.awt.Font( "微软雅黑 Light", 0, 17 )
 					"horizontalAlignment": 2
 					"verticalTextPosition": 3
 					"opaque": true
@@ -51,7 +51,7 @@ new FormModel {
 			} )
 			add( new FormComponent( "javax.swing.JTextPane" ) {
 				name: "textPane2"
-				"preferredSize": new java.awt.Dimension( 6, 80 )
+				"preferredSize": new java.awt.Dimension( 6, 70 )
 				"background": new java.awt.Color( 240, 240, 240, 255 )
 			} )
 			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
@@ -74,7 +74,7 @@ new FormModel {
 					name: "title4"
 					"textWithMnemonic": "确定"
 					"foreground": sfield java.awt.Color white
-					"font": new java.awt.Font( "仿宋", 1, 20 )
+					"font": new java.awt.Font( "微软雅黑 Light", 1, 20 )
 					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "title4KeyPressed", true ) )
 					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "title4MouseClicked", true ) )
 				} )
@@ -92,7 +92,7 @@ new FormModel {
 				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
 					name: "title5"
 					"textWithMnemonic": "首页"
-					"font": new java.awt.Font( "仿宋", 0, 20 )
+					"font": new java.awt.Font( "微软雅黑 Light", 0, 20 )
 					"horizontalAlignment": 2
 					"verticalAlignment": 1
 					"horizontalTextPosition": 2
@@ -103,7 +103,7 @@ new FormModel {
 				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
 					name: "title6"
 					"textWithMnemonic": "             我的"
-					"font": new java.awt.Font( "仿宋", 0, 20 )
+					"font": new java.awt.Font( "微软雅黑 Light", 0, 20 )
 					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "title6MouseClicked", true ) )
 				} )
 			} )

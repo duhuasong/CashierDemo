@@ -55,7 +55,7 @@ public class UnionPayForDeliver extends AbstractUnionPay {
 				retrunData.setCallDll(callDll);
 				String[] strings = retrunData.unionParse(re[0],re[1]);
 				log.debug("String[] strings :"+new Gson().toJson(strings));
-				getPay().getTitle2().setText("收款金额：                       ");
+				getPay().getTitle2().setText("收款金额：                                       ");
 				final Pay  pay = AbstractUnionPay.getPay();
 				JTextPane  jtex = pay.getTextPane1();
 				SimpleAttributeSet dSet = new SimpleAttributeSet();   
@@ -70,11 +70,13 @@ public class UnionPayForDeliver extends AbstractUnionPay {
 				jtex.setText(amount + "元 \n" + strings[1] );
 				jtex.setEditable(false);
 				try {
-					if (condition) {
-						
+					if (strings[1].equals("支付成功")) {
+						Voice.voice(strings[1]+amount+"元");
+						Voice.voice(strings[1]+amount+"元");
+						Voice.transform(strings[1]+amount+"元", "./voice/"+strings[1]+".wav");						
 					}
-					Voice.voice(strings[1]+amount+"元");
-					Voice.voice(strings[1]+amount+"元");
+					Voice.voice(strings[1]);
+					Voice.voice(strings[1]);
 					Voice.transform(strings[1], "./voice/"+strings[1]+".wav");
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block

@@ -205,10 +205,50 @@ public class Pay extends JPanel {
 		// TODO add your code here
 		log.debug("进入panel6MouseClicked");
 		if (getTitle4().getText() == "确定") {
-			final String amount = String.valueOf(getTextPane1().getText()).substring(1);
-			log.debug("String.valueOf(getTextPane1().getText()).substring(1):"+amount + "\n");
-			unionPay.pay(amount);
+			if (getTitle2().getText().trim() == "请扫描二维码") {
+				//扫描二维码后操作
+				AbstractUnionPay.getCachedThreadPool().execute(new Runnable() {
+					public void run() {
+						String[] ss =new String[]{ ".","..","..."};
+						int num = 0;
+						for (int i = 10; i >= 0; i--) {
+							if (num == 3) {
+								num = 0;
+							}
+							getTextPane1().setFont(new Font("宋体", Font.PLAIN, 40));
+							SimpleAttributeSet aSet = new SimpleAttributeSet();
+							StyleConstants.setAlignment(aSet, StyleConstants.ALIGN_CENTER);
+							StyledDocument doc = getTextPane1().getStyledDocument();
+							doc.setCharacterAttributes(105, doc.getLength() - 105, aSet, false);
+							doc.setParagraphAttributes(0, 104, aSet, false);
+							getTextPane1().setStyledDocument(doc);
+							getTextPane1().setForeground(new Color(50, 205, 50));
+							getTextPane1().setEditable(true);
+							getTextPane1().setText("等待付款"+ss[num]);
+							num++;
+							getTextPane1().setEditable(false);
+							try {
+								Thread.sleep(1000);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					}
+				});
+				
+				Lock lock = AbstractUnionPay.lock;
+				synchronized (lock) {
+					lock.notify();
+				}	
+			}else {
+				final String amount = String.valueOf(getTextPane1().getText()).substring(1);
+				log.debug("String.valueOf(getTextPane1().getText()).substring(1):"+amount + "\n");
+				unionPay.pay(amount);				
+			}
+
 			
+
 			/*
 			AbstractUnionPay.getCachedThreadPool().execute(new Runnable() {
 				public void run() {
@@ -246,7 +286,7 @@ public class Pay extends JPanel {
 					getThread().stop();
 				}
 			});*/
-		} else{
+		}else{
 			SimpleAttributeSet bSet = new SimpleAttributeSet();
 			StyleConstants.setAlignment(bSet, StyleConstants.ALIGN_LEFT);
 			StyledDocument doc = getTextPane1().getStyledDocument();
@@ -268,11 +308,49 @@ public class Pay extends JPanel {
 	private void title4MouseClicked(MouseEvent e) {
 		// TODO add your code here
 		if (getTitle4().getText() == "确定") {
-			final String amount = String.valueOf(getTextPane1().getText()).substring(1);
-			log.debug(amount + "\n");
-			unionPay.pay(amount);
-			
-			
+			if (getTitle2().getText().trim() == "请扫描二维码") {
+				//扫描二维码后操作
+				AbstractUnionPay.getCachedThreadPool().execute(new Runnable() {
+					public void run() {
+						String[] ss =new String[]{ ".","..","..."};
+						int num = 0;
+						for (int i = 10; i >= 0; i--) {
+							if (num == 3) {
+								num = 0;
+							}
+							getTextPane1().setFont(new Font("宋体", Font.PLAIN, 40));
+							SimpleAttributeSet aSet = new SimpleAttributeSet();
+							StyleConstants.setAlignment(aSet, StyleConstants.ALIGN_CENTER);
+							StyledDocument doc = getTextPane1().getStyledDocument();
+							doc.setCharacterAttributes(105, doc.getLength() - 105, aSet, false);
+							doc.setParagraphAttributes(0, 104, aSet, false);
+							getTextPane1().setStyledDocument(doc);
+							getTextPane1().setForeground(new Color(50, 205, 50));
+							getTextPane1().setEditable(true);
+							getTextPane1().setText("等待付款"+ss[num]);
+							num++;
+							getTextPane1().setEditable(false);
+							try {
+								Thread.sleep(1000);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					}
+				});
+				
+				Lock lock = AbstractUnionPay.lock;
+				synchronized (lock) {
+					lock.notify();
+				}
+				
+				
+			}else {
+				final String amount = String.valueOf(getTextPane1().getText()).substring(1);
+				log.debug("String.valueOf(getTextPane1().getText()).substring(1):"+amount + "\n");
+				unionPay.pay(amount);				
+			}
 			/*
 			AbstractUnionPay.getCachedThreadPool().execute(new Runnable() {
 				public void run() {
@@ -369,7 +447,7 @@ public class Pay extends JPanel {
 		title1 = compFactory.createTitle("\u9996\u9875");
 		panel5 = new JPanel();
 		panel2 = new JPanel();
-		title2 = compFactory.createTitle("\u6536\u6b3e\u91d1\u989d\uff1a                     ");
+		title2 = compFactory.createTitle("\u6536\u6b3e\u91d1\u989d\uff1a                                       ");
 		textPane1 = new JTextPane();
 		textPane2 = new JTextPane();
 		scrollPane1 = new JScrollPane();
@@ -387,12 +465,12 @@ public class Pay extends JPanel {
 
 		//======== panel1 ========
 		{
-			panel1.setBackground(new Color(0, 11, 224));
+			panel1.setBackground(new Color(255, 11, 41));
 			panel1.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 7));
 			((FlowLayout)panel1.getLayout()).setAlignOnBaseline(true);
 
 			//---- title1 ----
-			title1.setFont(new Font("\u4eff\u5b8b", Font.BOLD, 20));
+			title1.setFont(new Font("\u5fae\u8f6f\u96c5\u9ed1 Light", Font.BOLD, 20));
 			title1.setForeground(Color.white);
 			title1.setBackground(new Color(51, 17, 199));
 			panel1.add(title1);
@@ -410,7 +488,7 @@ public class Pay extends JPanel {
 			panel2.setLayout(new FlowLayout(FlowLayout.CENTER, 1, 4));
 
 			//---- title2 ----
-			title2.setFont(new Font("\u4eff\u5b8b", Font.PLAIN, 17));
+			title2.setFont(new Font("\u5fae\u8f6f\u96c5\u9ed1 Light", Font.PLAIN, 17));
 			title2.setHorizontalAlignment(SwingConstants.LEFT);
 			title2.setVerticalTextPosition(SwingConstants.BOTTOM);
 			title2.setOpaque(true);
@@ -434,7 +512,7 @@ public class Pay extends JPanel {
 		add(textPane1);
 
 		//---- textPane2 ----
-		textPane2.setPreferredSize(new Dimension(6, 80));
+		textPane2.setPreferredSize(new Dimension(6, 70));
 		textPane2.setBackground(new Color(240, 240, 240));
 		add(textPane2);
 		add(scrollPane1);
@@ -467,7 +545,7 @@ public class Pay extends JPanel {
 
 			//---- title4 ----
 			title4.setForeground(Color.white);
-			title4.setFont(new Font("\u4eff\u5b8b", Font.BOLD, 20));
+			title4.setFont(new Font("\u5fae\u8f6f\u96c5\u9ed1 Light", Font.BOLD, 20));
 			title4.addKeyListener(new KeyAdapter() {
 				@Override
 				public void keyPressed(KeyEvent e) {
@@ -496,7 +574,7 @@ public class Pay extends JPanel {
 			panel8.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 7));
 
 			//---- title5 ----
-			title5.setFont(new Font("\u4eff\u5b8b", Font.PLAIN, 20));
+			title5.setFont(new Font("\u5fae\u8f6f\u96c5\u9ed1 Light", Font.PLAIN, 20));
 			title5.setHorizontalAlignment(SwingConstants.LEFT);
 			title5.setVerticalAlignment(SwingConstants.TOP);
 			title5.setHorizontalTextPosition(SwingConstants.LEFT);
@@ -511,7 +589,7 @@ public class Pay extends JPanel {
 			panel8.add(title5);
 
 			//---- title6 ----
-			title6.setFont(new Font("\u4eff\u5b8b", Font.PLAIN, 20));
+			title6.setFont(new Font("\u5fae\u8f6f\u96c5\u9ed1 Light", Font.PLAIN, 20));
 			title6.addMouseListener(new MouseAdapter() {
 				@Override
 				public void mouseClicked(MouseEvent e) {
