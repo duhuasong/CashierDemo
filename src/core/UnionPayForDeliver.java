@@ -53,7 +53,7 @@ public class UnionPayForDeliver extends AbstractUnionPay {
 				String[] re = callDll.payWithAuthCode(fString, "1", "2", tmps);// 此处写死，后续补充
 				log.debug("String[] re :"+new Gson().toJson(re));
 				retrunData.setCallDll(callDll);
-				String[] strings = retrunData.unionParse(re[0],re[1]);
+				final String[] strings = retrunData.unionParse(re[0],re[1]);
 				log.debug("String[] strings :"+new Gson().toJson(strings));
 				getPay().getTitle2().setText("收款金额：                                       ");
 				final Pay  pay = AbstractUnionPay.getPay();
@@ -64,25 +64,33 @@ public class UnionPayForDeliver extends AbstractUnionPay {
 		        doc.setCharacterAttributes(105, doc.getLength()-105, dSet, false);  
 		        doc.setParagraphAttributes(0, 104, dSet, false);  
 				jtex.setStyledDocument(doc);
-				Font font = new Font("宋体",Font.BOLD,40);
+				Font font = new Font("微软雅黑light",Font.BOLD,35);
 				jtex.setFont(font);
 				jtex.setEditable(true);
 				jtex.setText(amount + "元 \n" + strings[1] );
 				jtex.setEditable(false);
-				try {
-					if (strings[1].equals("支付成功")) {
-						Voice.voice(strings[1]+amount+"元");
-						Voice.voice(strings[1]+amount+"元");
-						Voice.transform(strings[1]+amount+"元", "./voice/"+strings[1]+".wav");						
+				Pay.getThread().stop();
+				cachedThreadPool.execute(new  Runnable() {
+					public void run() {
+						try {
+							if (strings[1].equals("支付成功")) {
+								Voice.voice(strings[1]+amount+"元");
+								Voice.voice(strings[1]+amount+"元");
+								Voice.transform(strings[1]+amount+"元", "./voice/"+strings[1]+".wav");						
+							}else {
+								Voice.voice(strings[1]);
+								Voice.voice(strings[1]);
+								Voice.transform(strings[1], "./voice/"+strings[1]+".wav");								
+							}
+
+						} catch (IOException e1) {
+							// TODO Auto-generated catch block
+							Mp3Player.pl("./voice/"+"收款成功.wav");
+							
+						}						
 					}
-					Voice.voice(strings[1]);
-					Voice.voice(strings[1]);
-					Voice.transform(strings[1], "./voice/"+strings[1]+".wav");
-				} catch (IOException e1) {
-					// TODO Auto-generated catch block
-					Mp3Player.pl("./voice/"+"收款成功.wav");
-					
-				}
+				});
+
 				
 				SimpleAttributeSet eSet = new SimpleAttributeSet();   
 				JTextPane  jp = pay.getTextPane2();

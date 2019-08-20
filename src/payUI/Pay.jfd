@@ -14,7 +14,7 @@ new FormModel {
 				"background": new java.awt.Color( 255, 11, 41, 255 )
 				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
 					name: "title1"
-					"textWithMnemonic": "首页"
+					"textWithMnemonic": "收款助手"
 					"font": new java.awt.Font( "微软雅黑 Light", 1, 20 )
 					"foreground": sfield java.awt.Color white
 					"background": new java.awt.Color( 51, 17, 199, 255 )

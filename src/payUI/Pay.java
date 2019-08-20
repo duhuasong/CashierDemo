@@ -431,6 +431,37 @@ public class Pay extends JPanel {
 					log.debug("String.valueOf(getTextPane1().getText()).substring(1):"+amount + "\n");
 					unionPay.pay(amount);
 			}else {
+				//扫描二维码后操作
+				AbstractUnionPay.getCachedThreadPool().execute(new Runnable() {
+					public void run() {
+						thread =Thread.currentThread();
+						String[] ss =new String[]{ ".","..","..."};
+						int num = 0;
+						for (int i = 10; i >= 0; i--) {
+							if (num == 3) {
+								num = 0;
+							}
+							getTextPane1().setFont(new Font("宋体", Font.PLAIN, 40));
+							SimpleAttributeSet aSet = new SimpleAttributeSet();
+							StyleConstants.setAlignment(aSet, StyleConstants.ALIGN_CENTER);
+							StyledDocument doc = getTextPane1().getStyledDocument();
+							doc.setCharacterAttributes(105, doc.getLength() - 105, aSet, false);
+							doc.setParagraphAttributes(0, 104, aSet, false);
+							getTextPane1().setStyledDocument(doc);
+							getTextPane1().setForeground(new Color(50, 205, 50));
+							getTextPane1().setEditable(true);
+							getTextPane1().setText("等待付款"+ss[num]);
+							num++;
+							getTextPane1().setEditable(false);
+							try {
+								Thread.sleep(1000);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					}
+				});
 				Lock lock = AbstractUnionPay.lock;
 				synchronized (lock) {
 					lock.notify();

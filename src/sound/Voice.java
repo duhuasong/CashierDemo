@@ -80,6 +80,7 @@ public class Voice extends Speeker{
 	}
 
 	public static void main(String[] args) {
+
 		String ss = "收款成功";
 		try {
 			voice("收款成功");
@@ -87,5 +88,7 @@ public class Voice extends Speeker{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	
+		System.out.print(System.getProperty("java.library.path")); 
 	}
 }
