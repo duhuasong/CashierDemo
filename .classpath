@@ -2,47 +2,37 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="resources"/>
-	<classpathentry exported="true" kind="lib" path="lib/miglayout-swing.jar" sourcepath="lib/miglayout-swing-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/Cashier/lib/miglayout-swing-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="lib/miglayout-core.jar" sourcepath="lib/miglayout-core-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/Cashier/lib/miglayout-core-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="lib/TableLayout.jar" sourcepath="lib/TableLayout-src.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/Cashier/lib/TableLayout-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="lib/jgoodies-forms.jar" sourcepath="lib/jgoodies-forms-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/Cashier/lib/jgoodies-forms-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="lib/jgoodies-common.jar" sourcepath="lib/jgoodies-common-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/Cashier/lib/jgoodies-common-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/jna-4.0.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/jna-platform-4.0.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/swingx-1.6.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/commons-codec-1.6.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/commons-httpclient-3.0.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/commons-logging-1.1.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/dom4j-1.6.1.jar" sourcepath="C:/Users/dhs/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/httpclient-4.3.4.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/httpcore-4.3.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/jaxen-1.1-beta-6.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/sqlite-jdbc-3.18.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/dom4j-1.6.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/gson-2.8.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/jacob.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_75"/>
-	<classpathentry exported="true" kind="lib" path="E:/space/Cashier/lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/dom4j-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/sqlite-jdbc-3.18.0.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jna-platform-4.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jna-4.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/swingx-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jgoodies-common.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jgoodies-common-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jgoodies-common-sources.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jgoodies-forms.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jgoodies-forms-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jgoodies-forms-sources.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/TableLayout.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/TableLayout-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/TableLayout-src.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/miglayout-core.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/miglayout-core-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/miglayout-core-sources.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/miglayout-swing.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/miglayout-swing-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/miglayout-swing-sources.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/commons-httpclient-3.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/httpclient-4.3.4.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jaxen-1.1-beta-6.jar"/>
+	<classpathentry kind="lib" path="D:/space/Cashier/lib/jacob.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
