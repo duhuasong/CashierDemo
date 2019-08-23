@@ -32,7 +32,9 @@ public class test {
 			}
 		});
 		frame.add(pay);
-		frame.setSize(300, 465);
+		frame.setSize(360, 600);
+		//使窗体居在屏幕上居中显示 zw
+		frame.setLocationRelativeTo(null);
 		frame.setResizable(false);
 		frame.setExtendedState(1);
 		frame.setVisible(true);
