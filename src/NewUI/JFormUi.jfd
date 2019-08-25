@@ -1,0 +1,189 @@
+JFDML JFormDesigner: "6.0.6.3.196" Java: "1.8.0_144" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.HorizontalLayout ) ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 715, 580 )
+			"minimumSize": new java.awt.Dimension( 1, 1 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) ) {
+				name: "panel1"
+				"preferredSize": new java.awt.Dimension( 350, 580 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) ) {
+					name: "panel5"
+					"background": new java.awt.Color( 102, 153, 255, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "当日收款记录"
+						"preferredSize": new java.awt.Dimension( 24, 80 )
+						"font": new java.awt.Font( "微软雅黑 Light", 0, 30 )
+						"horizontalTextPosition": 0
+						"horizontalAlignment": 0
+						"background": new java.awt.Color( 102, 204, 255, 255 )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.HorizontalLayout ) ) {
+					name: "panel10"
+					"preferredSize": new java.awt.Dimension( 0, 70 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "收款时间"
+						"preferredSize": new java.awt.Dimension( 116, 15 )
+						"font": &Font0 new java.awt.Font( "微软雅黑 Light", 0, 26 )
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "收款金额"
+						"preferredSize": new java.awt.Dimension( 117, 15 )
+						"font": #Font0
+						"horizontalAlignment": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "交易状态"
+						"preferredSize": new java.awt.Dimension( 116, 15 )
+						"font": #Font0
+						"horizontalAlignment": 0
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "default"
+					"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, linegap, default"
+				} ) {
+					name: "panel9"
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField2"
+						"preferredSize": new java.awt.Dimension( 6, 60 )
+						"font": &Font1 new java.awt.Font( "微软雅黑 Light", 0, 24 )
+						"text": " 22:32:18    ￥10.00        成功"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 1
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField1"
+						"preferredSize": new java.awt.Dimension( 350, 60 )
+						"font": #Font1
+						"text": " 22:18:26    ￥12.00        成功"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 3
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField3"
+						"preferredSize": new java.awt.Dimension( 6, 60 )
+						"font": #Font1
+						"text": " 21:42:56    ￥8.00         成功"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 5
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField4"
+						"preferredSize": new java.awt.Dimension( 6, 60 )
+						"font": new java.awt.Font( "宋体", 0, 24 )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 7
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField5"
+						"preferredSize": new java.awt.Dimension( 6, 60 )
+						"font": new java.awt.Font( "宋体", 0, 24 )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 9
+					} )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) {
+				"gap": -1
+			} ) {
+				name: "panel2"
+				"preferredSize": new java.awt.Dimension( 15, 580 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "<<"
+					"preferredSize": new java.awt.Dimension( 15, 290 )
+					"margin": new java.awt.Insets( 0, 0, 0, 0 )
+					"font": new java.awt.Font( "宋体", 0, 10 )
+					"verticalAlignment": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": ">>"
+					"preferredSize": new java.awt.Dimension( 15, 290 )
+					"font": new java.awt.Font( "宋体", 0, 10 )
+					"margin": new java.awt.Insets( 0, 0, 0, 0 )
+					"iconTextGap": 0
+					"verticalAlignment": 1
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) ) {
+				name: "panel3"
+				"preferredSize": new java.awt.Dimension( 350, 580 )
+				"font": new java.awt.Font( "宋体", 0, 22 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) ) {
+					name: "panel6"
+					"background": new java.awt.Color( 102, 153, 255, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "收银助手"
+						"preferredSize": new java.awt.Dimension( 24, 80 )
+						"background": new java.awt.Color( 153, 255, 255, 255 )
+						"minimumSize": new java.awt.Dimension( 20, 15 )
+						"maximumSize": new java.awt.Dimension( 60, 100 )
+						"horizontalAlignment": 0
+						"font": new java.awt.Font( "微软雅黑 Light", 0, 30 )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator1"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "tip"
+					"text": "收款金额："
+					"preferredSize": new java.awt.Dimension( 24, 70 )
+					"maximumSize": new java.awt.Dimension( 10024, 100 )
+					"font": new java.awt.Font( "微软雅黑 Light", 0, 26 )
+					"background": new java.awt.Color( 51, 51, 255, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textOne"
+					"preferredSize": &Dimension0 new java.awt.Dimension( 6, 120 )
+					"font": &Font2 new java.awt.Font( "宋体", 0, 56 )
+					"text": "￥"
+					"cursor": &Cursor0 new java.awt.Cursor( 2 )
+				} )
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "textTwo"
+					"preferredSize": #Dimension0
+					"font": #Font2
+					"cursor": #Cursor0
+					"background": new java.awt.Color( 240, 240, 240, 255 )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonOne"
+					"text": "确 定"
+					"preferredSize": new java.awt.Dimension( 57, 80 )
+					"font": new java.awt.Font( "微软雅黑 Light", 0, 56 )
+					"borderPainted": false
+					"minimumSize": new java.awt.Dimension( 10, 73 )
+					"maximumSize": new java.awt.Dimension( 173, 190 )
+					"background": new com.jformdesigner.model.SwingColor( "Button.background" )
+					"margin": new java.awt.Insets( 0, 0, 0, 0 )
+					"horizontalTextPosition": 0
+					"foreground": new java.awt.Color( 102, 153, 255, 255 )
+					auxiliary() {
+						"JavaCodeGenerator.customCreate": true
+					}
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 50, 0 )
+			"size": new java.awt.Dimension( 745, 590 )
+		} )
+	}
+}

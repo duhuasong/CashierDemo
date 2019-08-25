@@ -1,0 +1,63 @@
+2019-08-23 15:43:47  [ AWT-EventQueue-0:0 ] - [ DEBUG ]  String.valueOf(getTextPane1().getText()).substring(1): 0.01
+
+2019-08-23 15:43:47  [ AWT-EventQueue-0:7 ] - [ DEBUG ]  amount: 0.01
+2019-08-23 15:43:47  [ AWT-EventQueue-0:9 ] - [ DEBUG ]   f :1.0
+2019-08-23 15:43:52  [ pool-1-thread-2:4607 ] - [ DEBUG ]  String tmps :
+134654631823609889
+
+2019-08-23 15:43:52  [ pool-1-thread-2:5022 ] - [ DEBUG ]  String p1:<xml><TransType>2</TransType><Amount>1</Amount><Body>1</Body><QRCode>
+134654631823609889
+</QRCode></xml>
+2019-08-23 15:43:57  [ pool-1-thread-2:9751 ] - [ DEBUG ]  String[] strings:["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e1\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e\n134654631823609889\n\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e201\u003c/ReturnCode\u003e\u003cReturnMsg\u003e交易成功！\u003c/ReturnMsg\u003e\u003cReference\u003eA0510BF0721566546232535633\u003c/Reference\u003e\u003cTrace\u003e9551600000201908234134902203\u003c/Trace\u003e\u003cCardNo\u003e\u003c/CardNo\u003e\u003cAmount\u003e1\u003c/Amount\u003e\u003cTransDate\u003e20190823154403\u003c/TransDate\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cSettleDate\u003e\u003c/SettleDate \u003e\u003cMId\u003eQRA701653110FFL\u003c/MId\u003e\u003cTId\u003esdses03152929\u003c/TId\u003e\u003c/xml\u003e"]
+2019-08-23 15:43:57  [ pool-1-thread-2:9752 ] - [ DEBUG ]  String[] re :["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e1\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e\n134654631823609889\n\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e201\u003c/ReturnCode\u003e\u003cReturnMsg\u003e交易成功！\u003c/ReturnMsg\u003e\u003cReference\u003eA0510BF0721566546232535633\u003c/Reference\u003e\u003cTrace\u003e9551600000201908234134902203\u003c/Trace\u003e\u003cCardNo\u003e\u003c/CardNo\u003e\u003cAmount\u003e1\u003c/Amount\u003e\u003cTransDate\u003e20190823154403\u003c/TransDate\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cSettleDate\u003e\u003c/SettleDate \u003e\u003cMId\u003eQRA701653110FFL\u003c/MId\u003e\u003cTId\u003esdses03152929\u003c/TId\u003e\u003c/xml\u003e"]
+2019-08-23 15:43:57  [ pool-1-thread-2:9753 ] - [ DEBUG ]  xml:<xml><ReturnCode>201</ReturnCode><ReturnMsg>交易成功！</ReturnMsg><Reference>A0510BF0721566546232535633</Reference><Trace>9551600000201908234134902203</Trace><CardNo></CardNo><Amount>1</Amount><TransDate>20190823154403</TransDate><TransType>2</TransType><SettleDate></SettleDate ><MId>QRA701653110FFL</MId><TId>sdses03152929</TId></xml>
+2019-08-23 15:43:57  [ pool-1-thread-2:9809 ] - [ DEBUG ]  mapOne:{Amount=1, Trace=9551600000201908234134902203, ReturnCode=201, TransType=2, SettleDate=, Reference=A0510BF0721566546232535633, TId=sdses03152929, MId=QRA701653110FFL, ReturnMsg=交易成功！, TransDate=20190823154403, CardNo=}
+2019-08-23 15:43:57  [ pool-1-thread-2:9812 ] - [ DEBUG ]  map:{"Amount":"1","Body":"1","CardNo":"","MId":"QRA701653110FFL","QRCode":"\n134654631823609889\n","Reference":"A0510BF0721566546232535633","ReturnCode":"201","ReturnMsg":"交易成功！","SettleDate":"","TId":"sdses03152929","Trace":"9551600000201908234134902203","TransDate":"20190823154403","TransType":"2"}
+2019-08-23 15:43:57  [ pool-1-thread-2:9812 ] - [ DEBUG ]  res:["支付方式：二维码\n交易时间：2019-08-23-15:44:03\n订单号：A0510BF0721566546232535633","支付成功"]
+2019-08-23 15:43:57  [ pool-1-thread-2:9813 ] - [ DEBUG ]  String[] strings :["支付方式：二维码\n交易时间：2019-08-23-15:44:03\n订单号：A0510BF0721566546232535633","支付成功"]
+2019-08-23 16:25:56  [ AWT-EventQueue-0:0 ] - [ DEBUG ]  String.valueOf(getTextPane1().getText()).substring(1):0.01 
+
+2019-08-23 16:25:56  [ AWT-EventQueue-0:4 ] - [ DEBUG ]  amount:0.01 
+2019-08-23 16:25:56  [ AWT-EventQueue-0:5 ] - [ DEBUG ]   f :1.0
+2019-08-23 16:26:10  [ pool-1-thread-2:13817 ] - [ DEBUG ]  String tmps :
+134668374519831445
+2019-08-23 16:26:10  [ pool-1-thread-2:14228 ] - [ DEBUG ]  String p1:<xml><TransType>2</TransType><Amount>1</Amount><Body>1</Body><QRCode>
+134668374519831445</QRCode></xml>
+2019-08-23 16:26:15  [ pool-1-thread-2:18382 ] - [ DEBUG ]  String[] strings:["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e1\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e\n134668374519831445\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e201\u003c/ReturnCode\u003e\u003cReturnMsg\u003e交易成功！\u003c/ReturnMsg\u003e\u003cReference\u003eA0510BF0721566548771288764\u003c/Reference\u003e\u003cTrace\u003e9551600000201908233124327859\u003c/Trace\u003e\u003cCardNo\u003e\u003c/CardNo\u003e\u003cAmount\u003e1\u003c/Amount\u003e\u003cTransDate\u003e20190823162621\u003c/TransDate\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cSettleDate\u003e\u003c/SettleDate \u003e\u003cMId\u003eQRA701653110FFL\u003c/MId\u003e\u003cTId\u003esdses03152929\u003c/TId\u003e\u003c/xml\u003e"]
+2019-08-23 16:26:15  [ pool-1-thread-2:18383 ] - [ DEBUG ]  String[] re :["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e1\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e\n134668374519831445\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e201\u003c/ReturnCode\u003e\u003cReturnMsg\u003e交易成功！\u003c/ReturnMsg\u003e\u003cReference\u003eA0510BF0721566548771288764\u003c/Reference\u003e\u003cTrace\u003e9551600000201908233124327859\u003c/Trace\u003e\u003cCardNo\u003e\u003c/CardNo\u003e\u003cAmount\u003e1\u003c/Amount\u003e\u003cTransDate\u003e20190823162621\u003c/TransDate\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cSettleDate\u003e\u003c/SettleDate \u003e\u003cMId\u003eQRA701653110FFL\u003c/MId\u003e\u003cTId\u003esdses03152929\u003c/TId\u003e\u003c/xml\u003e"]
+2019-08-23 16:26:15  [ pool-1-thread-2:18383 ] - [ DEBUG ]  xml:<xml><ReturnCode>201</ReturnCode><ReturnMsg>交易成功！</ReturnMsg><Reference>A0510BF0721566548771288764</Reference><Trace>9551600000201908233124327859</Trace><CardNo></CardNo><Amount>1</Amount><TransDate>20190823162621</TransDate><TransType>2</TransType><SettleDate></SettleDate ><MId>QRA701653110FFL</MId><TId>sdses03152929</TId></xml>
+2019-08-23 16:26:15  [ pool-1-thread-2:18430 ] - [ DEBUG ]  mapOne:{Amount=1, Trace=9551600000201908233124327859, ReturnCode=201, TransType=2, SettleDate=, Reference=A0510BF0721566548771288764, TId=sdses03152929, MId=QRA701653110FFL, ReturnMsg=交易成功！, TransDate=20190823162621, CardNo=}
+2019-08-23 16:26:15  [ pool-1-thread-2:18432 ] - [ DEBUG ]  map:{"Amount":"1","Body":"1","CardNo":"","MId":"QRA701653110FFL","QRCode":"\n134668374519831445","Reference":"A0510BF0721566548771288764","ReturnCode":"201","ReturnMsg":"交易成功！","SettleDate":"","TId":"sdses03152929","Trace":"9551600000201908233124327859","TransDate":"20190823162621","TransType":"2"}
+2019-08-23 16:26:15  [ pool-1-thread-2:18433 ] - [ DEBUG ]  res:["支付方式：二维码\n交易时间：2019-08-23-16:26:21\n订单号：A0510BF0721566548771288764","支付成功"]
+2019-08-23 16:26:15  [ pool-1-thread-2:18433 ] - [ DEBUG ]  String[] strings :["支付方式：二维码\n交易时间：2019-08-23-16:26:21\n订单号：A0510BF0721566548771288764","支付成功"]
+2019-08-23 16:31:55  [ AWT-EventQueue-0:0 ] - [ DEBUG ]  String.valueOf(getTextPane1().getText()).substring(1):
+
+2019-08-23 16:31:55  [ AWT-EventQueue-0:4 ] - [ DEBUG ]  amount:
+2019-08-23 16:31:56  [ AWT-EventQueue-0:1318 ] - [ DEBUG ]  String.valueOf(getTextPane1().getText()).substring(1):
+
+2019-08-23 16:31:56  [ AWT-EventQueue-0:1319 ] - [ DEBUG ]  amount:
+2019-08-23 16:31:57  [ AWT-EventQueue-0:2271 ] - [ DEBUG ]  String.valueOf(getTextPane1().getText()).substring(1):
+
+2019-08-23 16:31:57  [ AWT-EventQueue-0:2272 ] - [ DEBUG ]  amount:
+2019-08-23 17:03:10  [ AWT-EventQueue-0:0 ] - [ DEBUG ]  String.valueOf(getTextPane1().getText()).substring(1): 0.04
+
+2019-08-23 17:03:10  [ AWT-EventQueue-0:1 ] - [ DEBUG ]  amount: 0.04
+2019-08-23 17:03:10  [ AWT-EventQueue-0:2 ] - [ DEBUG ]   f :4.0
+2019-08-23 17:03:23  [ pool-1-thread-2:13144 ] - [ DEBUG ]  String tmps :134649512721149466
+
+2019-08-23 17:03:24  [ pool-1-thread-2:13545 ] - [ DEBUG ]  String p1:<xml><TransType>2</TransType><Amount>4</Amount><Body>1</Body><QRCode>134649512721149466
+</QRCode></xml>
+2019-08-23 17:03:27  [ pool-1-thread-2:16923 ] - [ DEBUG ]  String[] strings:["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e4\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e134649512721149466\n\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e201\u003c/ReturnCode\u003e\u003cReturnMsg\u003e交易成功！\u003c/ReturnMsg\u003e\u003cReference\u003eA0510BF0721566551004304286\u003c/Reference\u003e\u003cTrace\u003e9551600000201908234134955702\u003c/Trace\u003e\u003cCardNo\u003e\u003c/CardNo\u003e\u003cAmount\u003e4\u003c/Amount\u003e\u003cTransDate\u003e20190823170334\u003c/TransDate\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cSettleDate\u003e\u003c/SettleDate \u003e\u003cMId\u003eQRA701653110FFL\u003c/MId\u003e\u003cTId\u003esdses03152929\u003c/TId\u003e\u003c/xml\u003e"]
+2019-08-23 17:03:27  [ pool-1-thread-2:16923 ] - [ DEBUG ]  String[] re :["\u003cxml\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cAmount\u003e4\u003c/Amount\u003e\u003cBody\u003e1\u003c/Body\u003e\u003cQRCode\u003e134649512721149466\n\u003c/QRCode\u003e\u003c/xml\u003e","\u003cxml\u003e\u003cReturnCode\u003e201\u003c/ReturnCode\u003e\u003cReturnMsg\u003e交易成功！\u003c/ReturnMsg\u003e\u003cReference\u003eA0510BF0721566551004304286\u003c/Reference\u003e\u003cTrace\u003e9551600000201908234134955702\u003c/Trace\u003e\u003cCardNo\u003e\u003c/CardNo\u003e\u003cAmount\u003e4\u003c/Amount\u003e\u003cTransDate\u003e20190823170334\u003c/TransDate\u003e\u003cTransType\u003e2\u003c/TransType\u003e\u003cSettleDate\u003e\u003c/SettleDate \u003e\u003cMId\u003eQRA701653110FFL\u003c/MId\u003e\u003cTId\u003esdses03152929\u003c/TId\u003e\u003c/xml\u003e"]
+2019-08-23 17:03:27  [ pool-1-thread-2:16924 ] - [ DEBUG ]  xml:<xml><ReturnCode>201</ReturnCode><ReturnMsg>交易成功！</ReturnMsg><Reference>A0510BF0721566551004304286</Reference><Trace>9551600000201908234134955702</Trace><CardNo></CardNo><Amount>4</Amount><TransDate>20190823170334</TransDate><TransType>2</TransType><SettleDate></SettleDate ><MId>QRA701653110FFL</MId><TId>sdses03152929</TId></xml>
+2019-08-23 17:03:27  [ pool-1-thread-2:16971 ] - [ DEBUG ]  mapOne:{Amount=4, Trace=9551600000201908234134955702, ReturnCode=201, TransType=2, SettleDate=, Reference=A0510BF0721566551004304286, TId=sdses03152929, MId=QRA701653110FFL, ReturnMsg=交易成功！, TransDate=20190823170334, CardNo=}
+2019-08-23 17:03:27  [ pool-1-thread-2:16973 ] - [ DEBUG ]  map:{"Amount":"4","Body":"1","CardNo":"","MId":"QRA701653110FFL","QRCode":"134649512721149466\n","Reference":"A0510BF0721566551004304286","ReturnCode":"201","ReturnMsg":"交易成功！","SettleDate":"","TId":"sdses03152929","Trace":"9551600000201908234134955702","TransDate":"20190823170334","TransType":"2"}
+2019-08-23 17:03:27  [ pool-1-thread-2:16974 ] - [ DEBUG ]  res:["支付方式：二维码\n交易时间：2019-08-23-17:03:34\n订单号：A0510BF0721566551004304286","支付成功"]
+2019-08-23 17:03:27  [ pool-1-thread-2:16974 ] - [ DEBUG ]  String[] strings :["支付方式：二维码\n交易时间：2019-08-23-17:03:34\n订单号：A0510BF0721566551004304286","支付成功"]
+2019-08-23 17:03:43  [ AWT-EventQueue-0:33211 ] - [ DEBUG ]  进入panel6MouseClicked
+2019-08-23 17:03:51  [ AWT-EventQueue-0:40859 ] - [ DEBUG ]  String.valueOf(getTextPane1().getText()).substring(1):1
+
+2019-08-23 17:03:51  [ AWT-EventQueue-0:40861 ] - [ DEBUG ]  amount:1
+2019-08-23 17:03:51  [ AWT-EventQueue-0:40861 ] - [ DEBUG ]   f :100.0
+2019-08-23 17:03:51  [ pool-1-thread-2:41166 ] - [ DEBUG ]  String tmps :
+2019-08-23 17:03:51  [ pool-1-thread-2:41166 ] - [ DEBUG ]  String p1:<xml><TransType>2</TransType><Amount>100</Amount><Body>1</Body><QRCode></QRCode></xml>
