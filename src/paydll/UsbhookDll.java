@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 
+import javax.swing.JPanel;
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -20,19 +22,19 @@ import com.sun.jna.platform.win32.WinUser.KBDLLHOOKSTRUCT;
 import com.sun.jna.platform.win32.WinUser.LowLevelKeyboardProc;
 import com.sun.jna.platform.win32.WinUser.MSG;
 
-import payUI.Pay;
+import OldUI.Pay;
 import untill.KeyIntMap;
 import untill.QraResolve;
 
 public class UsbhookDll {
 	static Logger log = LogManager.getLogger(UsbhookDll.class);
 	private static HHOOK hhk;
-	private static Pay pay ;
-	public static Pay getPay() {
+	private static JPanel pay ;
+	public static JPanel getPay() {
 		return pay;
 	}
 
-	public static void setPay(Pay pay) {
+	public static void setPay(JPanel pay) {
 		UsbhookDll.pay = pay;
 	}
 

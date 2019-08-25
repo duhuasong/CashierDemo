@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 
 import com.google.gson.Gson;
 
-import payUI.Pay;
+import OldUI.Pay;
 import paydll.CallDll;
 
 public abstract class RetrunData {
@@ -48,7 +48,7 @@ public abstract class RetrunData {
 	public String[] unionParse(String req, String xml) {
 		
 		log.debug("xml:" + xml);
-		String res[] = new String[] { "", "" };
+		String res[] = new String[] { "", "" ,"", "",""};
 		Map<String, String> mapReq = db.parse(req);
 		Map<String, String> mapOne = db.parse(xml);
 		Map<String, String> mapTwo = new TreeMap<>();
@@ -132,6 +132,9 @@ public abstract class RetrunData {
 		}
 		re = "支付方式："+pm + "\n" + "交易时间："+time + "\n" + "订单号："+tradeNo;
 		res[0] = re;
+		res[2] = tradeNo;
+		res[3] = time;		
+		res[4] = pm;	
 		log.debug("res:" + new Gson().toJson(res));
 		return res;
 	}

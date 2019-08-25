@@ -20,7 +20,7 @@ public class Mp3Player extends Speeker{
 		AudioClip sc = Applet.newAudioClip(url);
 		sc.play();
 	}
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		
-	}
+	}*/
 }

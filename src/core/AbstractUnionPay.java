@@ -9,15 +9,17 @@ import java.util.concurrent.FutureTask;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import javax.swing.JPanel;
+import javax.swing.JTextPane;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-
+import NewUI.PayUI;
+import data.Dao;
 import data.RetrunData;
-import payUI.Pay;
 import paydll.CallDll;
 import paydll.UsbhookDll;
 import sound.Mp3Player;
@@ -29,6 +31,15 @@ public abstract class AbstractUnionPay {
 	protected static ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
 	protected static CallDll callDll;
 	protected static RetrunData  retrunData;
+	protected static Dao dao;
+	public static Dao getDao() {
+		return dao;
+	}
+
+	public static void setDao(Dao dao) {
+		AbstractUnionPay.dao = dao;
+	}
+
 	static Voice voice;
 	 public static Voice getVoice() {
 		return voice;
@@ -72,13 +83,13 @@ public abstract class AbstractUnionPay {
 	}
 
 	public static Lock lock = new ReentrantLock();
-	private static Pay pay;
+	private static JPanel  pay;
 
-	public static Pay getPay() {
+	public static JPanel getPay() {
 		return pay;
 	}
 
-	public static void setPay(Pay pay) {
+	public static void setPay(JPanel pay) {
 		AbstractUnionPay.pay = pay;
 	}
 
@@ -116,13 +127,13 @@ public abstract class AbstractUnionPay {
 		// 启动监听
 		//uThreadLocal.set(usbhookDll);
 		
-		pay.getTextPane1().setText("");
+		 ((PayUI) pay).getTextOne().setText("");
 		SimpleAttributeSet bSet = new SimpleAttributeSet();
 		StyleConstants.setAlignment(bSet, StyleConstants.ALIGN_CENTER);
-		StyledDocument doc = pay.getTextPane1().getStyledDocument();
+		StyledDocument doc = ((PayUI) pay).getTextOne().getStyledDocument();
 		doc.setCharacterAttributes(105, doc.getLength() - 105, bSet, false);
 		doc.setParagraphAttributes(0, 104, bSet, false);
-		pay.getTitle2().setText("请扫描二维码");
+		((PayUI) pay).getTip().setText("请扫描二维码:");
 		try {
 			Voice.voice("请扫描二维码");
 			Voice.voice("请扫描二维码");
@@ -131,9 +142,9 @@ public abstract class AbstractUnionPay {
 			// TODO Auto-generated catch block
 			Mp3Player.pl("./voice/"+"请扫描二维码.wav");
 		}
-		pay.getTextPane1().setStyledDocument(doc);
-		pay.getTextPane1().setFont(new Font("宋体", Font.PLAIN, 30));
-		pay.getTextPane1().setFocusable(true);
+		((PayUI) pay).getTextOne().setStyledDocument(doc);
+		((PayUI) pay).getTextOne().setFont(new Font("宋体", Font.PLAIN, 30));
+		((PayUI) pay).getTextOne().setFocusable(true);
 		AbstractUnionPay.setCallDll(callDll);
 	}
 	

@@ -73,12 +73,12 @@ public class SimpleData extends RetrunData {
 		this.map = map;
 	}
 	
-	public static void main(String[] args) {
+/*	public static void main(String[] args) {
 		SimpleData simpleData  = new SimpleData();
 		CallDll callDll = new CallDll();
 		String xml = callDll.pay("1", "1", "2");
 		Map  map = simpleData.parse(xml);
 		System.out.print(new Gson().toJson(map));
-	}
+	}*/
 
 }
